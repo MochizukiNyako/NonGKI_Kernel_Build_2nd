@@ -12,8 +12,8 @@ env:
   CUSTOM_CMDS : "CLANG_TRIPLE=aarch64-linux-gnu-"
   EXTRA_CMDS : "LLVM=1 LLVM_IAS=1"
 
-  KERNEL_SOURCE : "https://github.com/JackA1ltman/kernel_xiaomi_raphael_noksu.git"
-  KERNEL_BRANCH : "15.0"
+  KERNEL_SOURCE : "https://github.com/MochizukiNyako/air.git"
+  KERNEL_BRANCH : main"
 
   CLANG_SOURCE : "https://raw.githubusercontent.com/Neutron-Toolchains/antman/main/antman"
   CLANG_BRANCH : ""
@@ -68,7 +68,7 @@ env:
   HOOK_METHOD: "syscall" # Manual hook method ->  syscall and tracepoint.
   HOOK_OLDER: "false" # contain backport older patch and syscall older patch.
 
-  KPM_ENABLE: "false" # Only use it for SukiSU-Ultra.
+  KPM_ENABLE: "true" # Only use it for SukiSU-Ultra.
   KPM_PATCH_SOURCE: "https://raw.githubusercontent.com/SukiSU-Ultra/SukiSU_patch/refs/heads/main/kpm/patch_linux" # patch exec file source -> raw.githubusercontent.com/Test/Test/patch .
 
   BASEBAND_GUARD_ENABLE: "false" #if u want prevent unauthorized writes to critical partitions/device nodes.
